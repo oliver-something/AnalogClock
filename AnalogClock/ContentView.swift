@@ -24,14 +24,12 @@ struct ContentView: View {
                 
                 Text(Locale.current.localizedString(forRegionCode: Locale.current.language.region!.identifier) ?? "Unknown")
                     .font(.largeTitle)
-                    .fontWeight(.heavy)
+                    .fontWeight(.semibold)
                     .padding(.top, 35)
-                
-                Spacer(minLength: 0)
                 
                 Text(getTime())
                     .font(.system(size: 45))
-                    .fontWeight(.heavy)
+                    .fontWeight(.semibold)
                 Spacer()
             }
         }
